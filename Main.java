@@ -8,15 +8,15 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-		Zoo zoo = new Zoo("Зоопарк");
+		Zoo zoo = new Zoo("Г‡Г®Г®ГЇГ Г°ГЄ");
 		Scanner sc = new Scanner(System.in);
-		System.out.println("1. Додати тваринку \n2. Видалити тваринку по назві \n3. Видалити тваринку по типу \n4. Відсортувати по імені \n5. Відсортувати по типу \n6. Відсортувати по всьому \n0. Виключити програму");
+		System.out.println("1. Г„Г®Г¤Г ГІГЁ ГІГўГ Г°ГЁГ­ГЄГі \n2. Г‚ГЁГ¤Г Г«ГЁГІГЁ ГІГўГ Г°ГЁГ­ГЄГі ГЇГ® Г­Г Г§ГўВі \n3. Г‚ГЁГ¤Г Г«ГЁГІГЁ ГІГўГ Г°ГЁГ­ГЄГі ГЇГ® ГІГЁГЇГі \n4. Г‚ВіГ¤Г±Г®Г°ГІГіГўГ ГІГЁ ГЇГ® ВіГ¬ГҐГ­Ві \n5. Г‚ВіГ¤Г±Г®Г°ГІГіГўГ ГІГЁ ГЇГ® ГІГЁГЇГі \n6. Г‚ВіГ¤Г±Г®Г°ГІГіГўГ ГІГЁ ГЇГ® ГўГ±ГјГ®Г¬Гі \n0. Г‚ГЁГЄГ«ГѕГ·ГЁГІГЁ ГЇГ°Г®ГЈГ°Г Г¬Гі");
 		int i;
 		while(true){
 			i = sc.nextInt();
 			switch (i) {
 			case 1:
-				System.out.println("Введіть назву тваринки тип та вік");
+				System.out.println("Г‚ГўГҐГ¤ВіГІГј Г­Г Г§ГўГі ГІГўГ Г°ГЁГ­ГЄГЁ ГІГЁГЇ ГІГ  ГўВіГЄ");
 				System.out.println();
 				zoo.add(new Animal(sc.next(),sc.next(),sc.nextInt()));
 				zoo.add(new Animal(sc.next(),sc.next(),sc.nextInt()));
@@ -26,12 +26,12 @@ public class Main {
 				break;
 
 			case 2:
-				System.out.println("Введіть назву тваринки яку хочете видалити");
+				System.out.println("Г‚ГўГҐГ¤ВіГІГј Г­Г Г§ГўГі ГІГўГ Г°ГЁГ­ГЄГЁ ГїГЄГі ГµГ®Г·ГҐГІГҐ ГўГЁГ¤Г Г«ГЁГІГЁ");
 				zoo.removeByName(sc.next());
 				break;
 				
 			case 3:
-				System.out.println("Введіть тип тваринки яку хочете видалити");
+				System.out.println("Г‚ГўГҐГ¤ВіГІГј ГІГЁГЇ ГІГўГ Г°ГЁГ­ГЄГЁ ГїГЄГі ГµГ®Г·ГҐГІГҐ ГўГЁГ¤Г Г«ГЁГІГЁ");
 				zoo.removeByType(sc.next());
 				break;
 				
@@ -51,7 +51,7 @@ public class Main {
 				
 			case 6:	
 //				zoo.getList().sort(new SortByName().thenComparing(new SortByType()).thenComparing(new SortByAge()));
-				zoo.sortByAge();
+// 				zoo.sortByAge();
 				for(Animal animal : zoo.getList()){
 					System.out.println(animal);
 				}
