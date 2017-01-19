@@ -50,8 +50,7 @@ public class Main {
 				break;
 				
 			case 6:	
-//				zoo.getList().sort(new SortByName().thenComparing(new SortByType()).thenComparing(new SortByAge()));
-// 				zoo.sortByAge();
+				zoo.sortByAll();
 				for(Animal animal : zoo.getList()){
 					System.out.println(animal);
 				}
