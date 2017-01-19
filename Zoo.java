@@ -93,6 +93,8 @@ public class Zoo {
 		});
 	}
 	
-	
+	public void sortByAll(){
+		list.sort(new SortByName().thenComparing(new SortByType().thenComparing(new SortByAge())));
+	}
 	
 }
