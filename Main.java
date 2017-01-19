@@ -19,10 +19,6 @@ public class Main {
 				System.out.println("Ââåä³òü íàçâó òâàðèíêè òèï òà â³ê");
 				System.out.println();
 				zoo.add(new Animal(sc.next(),sc.next(),sc.nextInt()));
-				zoo.add(new Animal(sc.next(),sc.next(),sc.nextInt()));
-				zoo.add(new Animal(sc.next(),sc.next(),sc.nextInt()));
-				zoo.add(new Animal(sc.next(),sc.next(),sc.nextInt()));
-				zoo.add(new Animal(sc.next(),sc.next(),sc.nextInt()));
 				break;
 
 			case 2:
